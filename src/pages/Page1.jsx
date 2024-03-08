@@ -1,6 +1,8 @@
 import React from "react";
 import React, { useState } from "react";
 const Page1 = () => {
+  const [movieTitle, setMovieTitle] = useState("");
+  const [movieDetails, setMovieDetails] = useState(null);
   return (
     <div>
       <h1>All Films</h1>
