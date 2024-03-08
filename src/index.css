@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-  root {
+ /* LEMBRAR DE TROCAR PARA A FONTE BOLD */
+:root {
   --gray-color: #f2eac5;
   --yellow-color: #fdd835;
   --white-color: #f5f5f5;
