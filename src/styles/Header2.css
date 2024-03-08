@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+  padding-right: 180px;
+}
+a {
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid var(--orange-color);
+}
