@@ -11,7 +11,12 @@ const Page1 = () => {
     const response = await fetch(
       `http://www.omdbapi.com/?t=${movieTitle}&apikey=18753e07`
     );
-    
+    const data = await response.json();
+    if (data.Response === "False") {
+      alert("Filme não encontrado");
+    } else {
+      setMovieDetails(data);
+    }
   };
   return (
     <div>
