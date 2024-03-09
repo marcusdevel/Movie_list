@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState } from "react";
 const Page1 = () => {
   const [movieTitle, setMovieTitle] = useState("");
@@ -7,7 +6,13 @@ const Page1 = () => {
   const handleChange = (event) => {
     setMovieTitle(event.target.value);
   };
-  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await fetch(
+      `http://www.omdbapi.com/?t=${movieTitle}&apikey=18753e07`
+    );
+    
+  };
   return (
     <div>
       <h1>All Films</h1>
