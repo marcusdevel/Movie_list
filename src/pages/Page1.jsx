@@ -20,10 +20,15 @@ const Page1 = () => {
   };
   return (
     <div>
-      <h1>All Films</h1>
-      <form>
-        <input id="pesquisa" placeholder="Enter a movie title" />
-        <button>Pesquisar</button>
+      <h1>What would you like to watch?</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          name="pesquisa"
+          placeholder="Enter a movie title"
+          value={movieTitle}
+          onChange={handleChange}
+        />
+        <button type="submit">Pesquisar</button>
       </form>
       <div className="mainPage">
         <img
