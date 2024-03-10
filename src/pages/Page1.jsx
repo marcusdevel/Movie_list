@@ -30,17 +30,26 @@ const Page1 = () => {
         />
         <button type="submit">Pesquisar</button>
       </form>
+
+      {movieDetails && (
+        
+      
       <div className="mainPage">
         <img
-          src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
-          alt=""
+          src={movieDetails.Poster}
+          alt={movieDetails.Title}
         />
 
         <div className="card2">
+        <h2>{movieDetails.Title}</h2>
+        <p>Year: {movieDetails.Year}</p>
+        <p>Rated: {movieDetails.Rated}</p>
+        <p>Plot: {movieDetails.Plot}</p>
           <button type="button">View Details</button>
           <button type="button">Watchlist</button>
         </div>
       </div>
+      )}
     </div>
   );
 };
