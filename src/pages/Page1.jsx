@@ -19,7 +19,7 @@ const Page1 = () => {
     }
   };
   return (
-    <div>
+    <div className="page">
       <h1>What would you like to watch?</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -40,7 +40,7 @@ const Page1 = () => {
           alt={movieDetails.Title}
         />
 
-        <div className="card2">
+        <div className="info-card">
         <h2>{movieDetails.Title}</h2>
         <p>Year: {movieDetails.Year}</p>
         <p>Rated: {movieDetails.Rated}</p>
