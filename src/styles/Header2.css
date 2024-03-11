@@ -12,3 +12,7 @@ a {
   padding: 20px;
   border-bottom: 1px solid var(--orange-color);
 }
+
+.navbar img {
+  padding-left: 180px;
+}
