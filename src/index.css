@@ -39,3 +39,17 @@ input {
   width: 840px;
   margin-bottom: 27px;
 }
+
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2 {
+  text-align: left;
+  width: 680px;
+  margin-left: 24px;
+  min-height: max-content;
+  color: var(--grey);
+}
