@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
- /* LEMBRAR DE TROCAR PARA A FONTE BOLD */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/* LEMBRAR DE TROCAR PARA A FONTE BOLD */
 :root {
   --gray-color: #f2eac5;
   --yellow-color: #fdd835;
@@ -17,4 +17,13 @@
 
 body {
   background-color: rgba(0, 0, 0, 0.87);
+  font-family: "roboto", sans-serif;
+}
+
+h1 {
+  color: var(--white-color);
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 37.5px;
+  font-weight: 600;
 }
