@@ -8,8 +8,8 @@ const header = () => {
         <img src={Frame17} alt="logo" />
         <ul>
           <li>
-            <a href="#">All Films</a>
-            <a href="#">My Whacthlist</a>
+            <a href="#">Search</a>
+            <a href="#">My Wacthlist</a>
           </li>
         </ul>
       </nav>
