@@ -7,6 +7,7 @@
   --orange-color: #ff9800;
   --light-gray: #fafafa;
   --dark-gray: #7e7e7e;
+  --grey: #9e9e9e;
 }
 
 * {
@@ -37,6 +38,10 @@ h1 {
 input {
   width: 840px;
   margin-bottom: 27px;
+  background-color: transparent;
+  border: 1px solid #7e7e7e;
+  padding: 12px 20px;
+  border-radius: 10px;
 }
 
 .mainPage {
@@ -63,4 +68,3 @@ input {
   margin-bottom: 10px;
   color: white;
 }
-
