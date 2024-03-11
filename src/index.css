@@ -27,3 +27,15 @@ h1 {
   line-height: 37.5px;
   font-weight: 600;
 }
+
+.page {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 180px;
+}
+input {
+  width: 840px;
+  margin-bottom: 27px;
+}
