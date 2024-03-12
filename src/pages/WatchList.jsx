@@ -1,8 +1,13 @@
 import React from "react";
 import Header from "../components/header";
-const Films = () => {
-  <Header />
-  return <div>Films</div>;
+const WatchList = () => {
+
+  return (
+    <div>
+      Films
+      <h1>Router funcionando</h1>
+    </div>
+  );
 };
 
-export default Films;
+export default WatchList;
