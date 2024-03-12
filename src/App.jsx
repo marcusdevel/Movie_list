@@ -6,12 +6,15 @@ import Header from "./components/header";
 import WatchList from "./pages/WatchList";
 function App() {
   return (
-    <div>
-      
-      <Header />
-      <Page1 />
-      <h1>Movie_list</h1>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+      </div>
+      <Routes>
+        <Route path="/WatchList" element={<WatchList />} />
+        <Route path="/" element={<Page1 />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
