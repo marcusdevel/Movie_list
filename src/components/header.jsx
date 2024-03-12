@@ -1,5 +1,6 @@
 import React from "react";
 import Frame17 from "../assets/Frame17.png";
+import { Link } from "react-router-dom";
 
 const header = () => {
   return (
@@ -8,8 +9,9 @@ const header = () => {
         <img src={Frame17} alt="logo" />
         <ul>
           <li>
-            <a href="#">Search</a>
-            <a href="#">My Wacthlist</a>
+            <Link to="/">Search</Link>
+            <Link to="/WatchList">My Wacthlist</Link>
+           
           </li>
         </ul>
       </nav>
