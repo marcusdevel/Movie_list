@@ -1,12 +1,14 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem 0; */
   text-align: center;
 }
 
 .navbar {
   border-bottom: 1px solid var(--orange-color);
+  width: 1440px;
+  height: 68px;
 }
 ul li a:first-child {
   margin-right: 15px;
@@ -16,7 +18,7 @@ ul li a:first-child {
 }
 
 .input-form input {
-  padding-right: 40px; 
+  padding-right: 40px;
 }
 
 .input-form .vector-img {
@@ -32,5 +34,3 @@ ul li a:first-child {
   padding: 0;
   border: none;
 }
-
-
