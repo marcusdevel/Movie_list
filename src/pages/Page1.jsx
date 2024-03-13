@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import vectorimg from "../assets/Vector.png";
 import Group from "../assets/Group.png";
-import icon from "../assets/icon.png";
+import icon from "../assets/v-icon.png";
 const Page1 = ({ watchlist, setWatchlist }) => {
   const [movieTitle, setMovieTitle] = useState("");
   const [movieDetails, setMovieDetails] = useState(null);
@@ -62,12 +62,11 @@ const Page1 = ({ watchlist, setWatchlist }) => {
 
           <div className="info-card">
             <h2>{movieDetails.Title}</h2>
-            <p>
-               {movieDetails.Genre}
-            </p>
+            <p>{movieDetails.Genre}</p>
             <div className="rating">
-            <img className="group-img" src={Group} alt="" /> {movieDetails.imdbRating}
-            <img className="v-icon" src={icon} alt="" />
+              <img className="group-img" src={Group} alt="" />{" "}
+              {movieDetails.imdbRating}
+              <img className="v-icon" src={icon} alt="" />
             </div>
             <p>Plot: {movieDetails.Plot}</p>
             <div className="buttons">
