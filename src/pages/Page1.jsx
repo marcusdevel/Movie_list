@@ -30,7 +30,11 @@ const Page1 = ({watchlist, setWatchlist}) => {
       );
     }
   };
-
+  useEffect(() => {
+    if (localStorage.getItem("watchlist")) {
+      setWatchlist(JSON.parse(localStorage.getItem("watchlist")));
+    }
+  }, []);
       
   return (
     <div className="page">
