@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-const Page1 = ({watchlist, setWatchlist}) => {
+const Page1 = ({ watchlist, setWatchlist }) => {
   const [movieTitle, setMovieTitle] = useState("");
   const [movieDetails, setMovieDetails] = useState(null);
 
@@ -35,7 +35,7 @@ const Page1 = ({watchlist, setWatchlist}) => {
       setWatchlist(JSON.parse(localStorage.getItem("watchlist")));
     }
   }, []);
-      
+
   return (
     <div className="page">
       <h1>What would you like to watch?</h1>
@@ -59,7 +59,7 @@ const Page1 = ({watchlist, setWatchlist}) => {
             <p>Rated: {movieDetails.Rated}</p>
             <p>Plot: {movieDetails.Plot}</p>
             <button type="button">View Details</button>
-            <button type="button">Watchlist</button>
+            <button type="button" onClick={addToWatchlist}>Watchlist</button>
           </div>
         </div>
       )}
