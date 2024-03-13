@@ -23,14 +23,56 @@ ul li a:first-child {
 
 .input-form .vector-img {
   position: absolute;
-  right: 10px; 
+  right: 10px;
   top: 35%;
   transform: translateY(-50%);
-  width: 20px; 
+  width: 20px;
   height: auto;
 }
 
 .input-form .btn {
   padding: 0;
   border: none;
+}
+.buttons {
+  display: flex;
+  padding: 0 16px;
+  gap: 16px;
+  margin: 15px 0 15px -15px;
+
+  height: 36px;
+}
+
+.buttons #add {
+  width: 180px;
+  border-radius: 36px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  letter-spacing: 1.25px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+.buttons #add:hover {
+  background-color: white;
+  color: black;
+}
+.buttons #detail {
+  width: 137px;
+  border-radius: 48px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  letter-spacing: 1.25px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+}
+
+.buttons #detail:hover {
+  background-color: white;
+  color: black;
 }
