@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import vectorimg from "../assets/Vector.png";
 const Page1 = ({ watchlist, setWatchlist }) => {
   const [movieTitle, setMovieTitle] = useState("");
   const [movieDetails, setMovieDetails] = useState(null);
@@ -40,13 +41,17 @@ const Page1 = ({ watchlist, setWatchlist }) => {
     <div className="page">
       <h1>What would you like to watch?</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          name="pesquisa"
-          placeholder="Enter a movie title"
-          value={movieTitle}
-          onChange={handleChange}
-        />
-        <button type="submit">Pesquisar</button>
+        <div className="input-form">
+          <input
+            name="pesquisa"
+            placeholder="Enter a movie title"
+            value={movieTitle}
+            onChange={handleChange}
+          />
+          <button type="submit" className="btn">
+            <img className="vector-img" src={vectorimg} alt="vector" />
+          </button>
+        </div>
       </form>
 
       {movieDetails && (
@@ -59,7 +64,9 @@ const Page1 = ({ watchlist, setWatchlist }) => {
             <p>Rated: {movieDetails.Rated}</p>
             <p>Plot: {movieDetails.Plot}</p>
             <button type="button">View Details</button>
-            <button type="button" onClick={addToWatchlist}>Watchlist</button>
+            <button type="button" onClick={addToWatchlist}>
+              Watchlist
+            </button>
           </div>
         </div>
       )}
