@@ -34,6 +34,7 @@ ul li a:first-child {
   padding: 0;
   border: none;
 }
+
 .buttons {
   display: flex;
   padding: 0 16px;
@@ -75,4 +76,19 @@ ul li a:first-child {
 .buttons #detail:hover {
   background-color: white;
   color: black;
+}
+.rating {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.rating .group-img {
+  height: 16px;
+  width: 4.13rem;
+}
+
+.rating .v-icon {
+  height: 16px;
+  width: 1.1rem;
 }
