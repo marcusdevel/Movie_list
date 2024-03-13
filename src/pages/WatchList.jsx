@@ -3,7 +3,12 @@ import Header from "../components/header";
 const WatchList = () => {
   const [movies, setMovies] = useState([]);
 
-  // <Header />;
+  const removeFromWatchlist = (movieToRemove) => {
+    const updateMovies = movies.filter((movie) => movie !== movieToRemove);
+    setMovies(updateMovies);
+    localStorage.setItem("watchlist", JSON.stringify(updateMovies));
+  };
+
   return (
     <div>
       Films
