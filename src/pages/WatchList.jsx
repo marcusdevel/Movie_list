@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/header";
 const WatchList = () => {
+  const [movies, setMovies] = useState([]);
 
+  // <Header />;
   return (
     <div>
       Films
