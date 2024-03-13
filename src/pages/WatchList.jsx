@@ -15,8 +15,12 @@ const WatchList = () => {
   }, []);
   return (
     <div>
-      Films
-      <h1>Router funcionando</h1>
+      <ul>
+      {movies?.map((movie) => (
+          <div className="mainPage">
+            <img src={movie?.Poster} alt={movie?.Title} />
+
+      </ul>
     </div>
   );
 };
