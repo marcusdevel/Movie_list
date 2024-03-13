@@ -24,6 +24,13 @@ const Page1 = ({watchlist, setWatchlist}) => {
       setWatchlist([...watchlist, movieDetails]);
       alert("Filme adicionado à watchlist!");
 
+      localStorage.setItem(
+        "watchlist",
+        JSON.stringify([...watchlist, movieDetails])
+      );
+    }
+  };
+
       
   return (
     <div className="page">
