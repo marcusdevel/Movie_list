@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-const Page1 = () => {
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+const Page1 = ({watchlist, setWatchlist}) => {
   const [movieTitle, setMovieTitle] = useState("");
   const [movieDetails, setMovieDetails] = useState(null);
 
@@ -18,6 +19,12 @@ const Page1 = () => {
       setMovieDetails(data);
     }
   };
+  const addToWatchlist = () => {
+    if (movieDetails) {
+      setWatchlist([...watchlist, movieDetails]);
+      alert("Filme adicionado à watchlist!");
+
+      
   return (
     <div className="page">
       <h1>What would you like to watch?</h1>
@@ -32,23 +39,18 @@ const Page1 = () => {
       </form>
 
       {movieDetails && (
-        
-      
-      <div className="mainPage">
-        <img
-          src={movieDetails.Poster}
-          alt={movieDetails.Title}
-        />
+        <div className="mainPage">
+          <img src={movieDetails.Poster} alt={movieDetails.Title} />
 
-        <div className="info-card">
-        <h2>{movieDetails.Title}</h2>
-        <p>Year: {movieDetails.Year}</p>
-        <p>Rated: {movieDetails.Rated}</p>
-        <p>Plot: {movieDetails.Plot}</p>
-          <button type="button">View Details</button>
-          <button type="button">Watchlist</button>
+          <div className="info-card">
+            <h2>{movieDetails.Title}</h2>
+            <p>Year: {movieDetails.Year}</p>
+            <p>Rated: {movieDetails.Rated}</p>
+            <p>Plot: {movieDetails.Plot}</p>
+            <button type="button">View Details</button>
+            <button type="button">Watchlist</button>
+          </div>
         </div>
-      </div>
       )}
     </div>
   );
