@@ -14,7 +14,7 @@ const WatchList = () => {
     }
   }, []);
   return (
-    <div>
+    <div className="page">
       <ul>
         {movies?.map((movie) => (
           <div className="addMovie">
@@ -25,13 +25,16 @@ const WatchList = () => {
               <p>Rated: {movie?.Rated}</p>
               <p>Plot: {movie?.Plot}</p>
               <div className="buttons">
-                <button type="button">View Details</button>
+                <button type="button" id="detail">
+                  View Details
+                </button>
 
                 <button
                   type="button"
+                  id="remove"
                   onClick={() => removeFromWatchlist(movie)}
                 >
-                  Remove
+                  Remove from Watchlist
                 </button>
               </div>
             </div>
