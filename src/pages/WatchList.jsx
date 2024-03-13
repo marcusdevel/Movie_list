@@ -19,16 +19,21 @@ const WatchList = () => {
         {movies?.map((movie) => (
           <div className="addMovie">
             <img src={movie?.Poster} alt={movie?.Title} />
-            <div className="info-card">
+            <div className="infoCardAddMovie">
               <h2>{movie?.Title}</h2>
               <p>Year: {movie?.Year}</p>
               <p>Rated: {movie?.Rated}</p>
               <p>Plot: {movie?.Plot}</p>
-              <button type="button">View Details</button>
+              <div className="buttons">
+                <button type="button">View Details</button>
 
-              <button type="button" onClick={() => removeFromWatchlist(movie)}>
-                Remove
-              </button>
+                <button
+                  type="button"
+                  onClick={() => removeFromWatchlist(movie)}
+                >
+                  Remove
+                </button>
+              </div>
             </div>
           </div>
         ))}
