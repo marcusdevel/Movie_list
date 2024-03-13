@@ -8,7 +8,11 @@ const WatchList = () => {
     setMovies(updateMovies);
     localStorage.setItem("watchlist", JSON.stringify(updateMovies));
   };
-
+  useEffect(() => {
+    if (localStorage.getItem("watchlist")) {
+      setMovies(JSON.parse(localStorage.getItem("watchlist")));
+    }
+  }, []);
   return (
     <div>
       Films
