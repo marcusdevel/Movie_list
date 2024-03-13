@@ -63,10 +63,14 @@ input {
 }
 .info-card {
   text-align: left;
-  width: 680px;
+  width: 906px;
   margin-left: 24px;
-  min-height: max-content;
+  
   color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  letter-spacing: 0.5px;
 }
 
 .info-card h2 {
@@ -74,3 +78,15 @@ input {
   margin-bottom: 10px;
   color: white;
 }
+
+.infoCardAddMovie {
+  text-align: left;
+  width: 906px;
+  margin-left: 24px;
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  letter-spacing: 0.5px;
+}
+
