@@ -11,3 +11,26 @@
 ul li a:first-child {
   margin-right: 15px;
 }
+.input-form {
+  position: relative;
+}
+
+.input-form input {
+  padding-right: 40px; 
+}
+
+.input-form .vector-img {
+  position: absolute;
+  right: 10px; 
+  top: 35%;
+  transform: translateY(-50%);
+  width: 20px; 
+  height: auto;
+}
+
+.input-form .btn {
+  padding: 0;
+  border: none;
+}
+
+
