@@ -13,6 +13,14 @@
 ul li a:first-child {
   margin-right: 15px;
 }
+ul li a {
+  color: white;
+  padding: 11px 0;
+  text-decoration: none;
+}
+a:hover {
+  border: 2px solid black;
+}
 .input-form {
   position: relative;
 }
