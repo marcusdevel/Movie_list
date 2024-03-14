@@ -24,13 +24,20 @@ const Page1 = ({ watchlist, setWatchlist }) => {
   };
   const addToWatchlist = () => {
     if (movieDetails) {
-      setWatchlist([...watchlist, movieDetails]);
-      alert("Filme adicionado à watchlist!");
-
-      localStorage.setItem(
-        "watchlist",
-        JSON.stringify([...watchlist, movieDetails])
+      const isMovieInWatchlist = watchlist.some(
+        (item) => item.Title === movieDetails.Title
       );
+      if (isMovieInWatchlist) {
+        alert("Este filme já está na sua watchlist!");
+      } else {
+        setWatchlist([...watchlist, movieDetails]);
+        alert("Filme adicionado à watchlist!");
+
+        localStorage.setItem(
+          "watchlist",
+          JSON.stringify([...watchlist, movieDetails])
+        );
+      }
     }
   };
   useEffect(() => {
