@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/header";
+
 const WatchList = () => {
   const [movies, setMovies] = useState([]);
 
@@ -21,9 +22,9 @@ const WatchList = () => {
             <img src={movie?.Poster} alt={movie?.Title} />
             <div className="infoCardAddMovie">
               <h2>{movie?.Title}</h2>
-              <p>Year: {movie?.Year}</p>
-              <p>Rated: {movie?.Rated}</p>
-              <p>Plot: {movie?.Plot}</p>
+              <p> {movie?.Genre}</p>
+              <p> {movie?.imdbRating}</p>
+              <p> {movie?.Plot}</p>
               <div className="buttons">
                 <button type="button" id="detail">
                   View Details
